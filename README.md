@@ -20,3 +20,4 @@ Click "Open on Codespaces", to launch this project into a ready to use web VS-Co
 *- Files in codespaces autosave! No need to save anything.*
 
 [Codespaces Documentation](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/setting-up-your-python-project-for-codespaces)
+TO-DO: Support the addition of secrets to be injected as env vars into the environment [docs](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/configuring-dev-containers/specifying-recommended-secrets-for-a-repository)
