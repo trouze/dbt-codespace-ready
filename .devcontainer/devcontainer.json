@@ -1,8 +1,7 @@
 {
-    "name": "Codespaces Meltano CLI Starter",
+    "name": "Codespaces dbt CLI Starter",
     "extensions": [
-        "z3z1ma.meltano-power-user",
-        "redhat.vscode-yaml",
+        "innoverio.vscode-dbt-power-user"
     ],
     "dockerFile": "Dockerfile",
     "settings": {
@@ -16,5 +15,10 @@
             "moby": true,
             "dockerDashComposeVersion": "v1"
         }
+    },
+    "hostRequirements": {
+        "cpus": 2,
+        "memory": "4gb",
+        "storage": "32gb"
     }
 }

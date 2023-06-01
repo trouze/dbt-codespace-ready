@@ -1,9 +1,9 @@
-# Meltano specific stuff
-.meltano/*
-plugins/extractors/*
-plugins/loaders/*
-output/*
-!output/.gitkeep
+# dbt specific stuff
+target/
+dbt_packages/
+logs/
+env/
+.user.yml
 
 # Mac
 .DS_Store
