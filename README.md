@@ -5,7 +5,9 @@ No install needed, just a GitHub account (and a few spare Codespaces minutes you
 Let's get started!
 
 ## Open codespaces (if it isn't already open)
-Click "Open on Codespaces", to launch this project into a ready to use web VS-Code version with everything preloaded.
+Easiest way to get started is to click this [link](https://github.com/codespaces/new?template_repository=trouze/dbt-codespace-ready) to start a codespace off this repository.
+
+OR: Click "Open on Codespaces", to launch this project into a ready to use web VS-Code version with everything preloaded.
 
 <img src="codespaceOpen.gif" alt="" width="400"/>
 
