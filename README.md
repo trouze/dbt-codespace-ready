@@ -6,11 +6,11 @@ Opens a VS Code environment with the [dbt Fusion engine](https://docs.getdbt.com
 
 ## Quick start
 
-**Step 1** — Create a new repo for your dbt project from this template:
+**Start a new dbt project** — creates a repo in your org from this template, then open a Codespace from your new repo via Code → Codespaces:
 
 [![Use this template](https://img.shields.io/badge/Use_this_template-238636?style=for-the-badge&logo=github&logoColor=white)](https://github.com/new?template_name=dbt-codespace-ready&template_owner=trouze)
 
-**Step 2** — Open your new repo in a Codespace:
+**Try it out** — opens a Codespace directly from this template without creating a repo:
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?template_repository=trouze/dbt-codespace-ready)
 
