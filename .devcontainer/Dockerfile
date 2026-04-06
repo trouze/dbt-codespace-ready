@@ -1,6 +1,6 @@
-FROM ghcr.io/dbt-labs/dbt-snowflake:1.5.0
+FROM mcr.microsoft.com/devcontainers/base:ubuntu-22.04
 
-WORKDIR /home/
+USER vscode
+RUN curl -fsSL https://public.cdn.getdbt.com/fs/install/install.sh | sh -s -- --update
 
-COPY . .
-
+ENV PATH="/home/vscode/.local/bin:${PATH}"

@@ -1,0 +1,25 @@
+# dbt connection profile
+# Credentials are pulled from Codespaces secrets (or local environment variables).
+# See: https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/configuring-dev-containers/specifying-recommended-secrets-for-a-repository
+#
+# Set the following secrets in your Codespace (or export them in your shell):
+#   SNOWFLAKE_ACCOUNT   — e.g. abc12345.us-east-1
+#   SNOWFLAKE_USER      — your Snowflake username
+#   SNOWFLAKE_PASSWORD  — your Snowflake password (or use key-pair / SSO instead)
+#   SNOWFLAKE_DATABASE  — target database
+#   SNOWFLAKE_WAREHOUSE — virtual warehouse name
+#   SNOWFLAKE_ROLE      — (optional) Snowflake role
+
+my_project:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+      user: "{{ env_var('SNOWFLAKE_USER') }}"
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+      database: "{{ env_var('SNOWFLAKE_DATABASE') }}"
+      warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE') }}"
+      schema: "{{ env_var('SNOWFLAKE_SCHEMA', 'dev') }}"
+      role: "{{ env_var('SNOWFLAKE_ROLE', '') }}"
+      threads: 4
